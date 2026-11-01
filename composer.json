@@ -1,0 +1,41 @@
+{
+    "name": "phaenon/concurrent",
+    "description": "Structured concurrency for code compiled from Phaenon: the \\Phaenon\\Concurrent\\Scope class behind `concurrently { … }` blocks and `spawn`, on amp v3 and the Revolt event loop",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "phaenon",
+        "concurrency",
+        "structured-concurrency",
+        "fibers",
+        "amp",
+        "revolt"
+    ],
+    "homepage": "https://phaenon.dev",
+    "require": {
+        "php": ">=8.3",
+        "amphp/amp": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "phpstan/phpstan": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phaenon\\Concurrent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phaenon\\Concurrent\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "stan": "phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
