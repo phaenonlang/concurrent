@@ -154,7 +154,7 @@ final class Scope
             /** @var array<K, Future<U>> $tasks */
             $tasks = [];
             foreach ($items as $key => $item) {
-                $tasks[$key] = Scope::spawn(fn () => $task($item));
+                $tasks[$key] = Scope::spawn(fn() => $task($item));
             }
 
             return self::all($tasks);
