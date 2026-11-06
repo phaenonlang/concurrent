@@ -27,6 +27,8 @@ return Scope::run(function () use ($id) {
 The package is also usable from plain PHP: `Scope::run()` and `Scope::spawn()` are ordinary
 static methods.
 
+Install: `composer require phaenon/concurrent`
+
 ## What a scope guarantees
 
 - A task is a Fiber the [Revolt](https://revolt.run) event loop schedules; its handle is
@@ -73,5 +75,6 @@ concurrency installs no event loop.
 
 ## Design
 
-`concurrency.md` in the Phaenon design repository: the model, the spelling, the semantics, the
-compilation, and the decisions (C1–C10) behind them.
+[`concurrency.md`](https://github.com/phaenonlang/design/blob/main/concurrency.md) in the Phaenon
+design repository: the model, the spelling, the semantics, the compilation, and the decisions
+(C1–C10) behind them.

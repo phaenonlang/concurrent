@@ -1,6 +1,6 @@
 {
     "name": "phaenon/concurrent",
-    "description": "Structured concurrency for code compiled from Phaenon: the \\Phaenon\\Concurrent\\Scope class behind `concurrently { … }` blocks and `spawn`, on amp v3 and the Revolt event loop",
+    "description": "Structured concurrency for code compiled from Phaenon: the \\Phaenon\\Concurrent\\Scope class behind concurrently { … } blocks and spawn, on amp v3 and the Revolt event loop",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -12,6 +12,11 @@
         "revolt"
     ],
     "homepage": "https://phaenon.dev",
+    "support": {
+        "issues": "https://github.com/phaenonlang/concurrent/issues",
+        "source": "https://github.com/phaenonlang/concurrent",
+        "docs": "https://phaenon.dev"
+    },
     "require": {
         "php": ">=8.3",
         "amphp/amp": "^3.1"
