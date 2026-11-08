@@ -1,5 +1,15 @@
 # phaenon/concurrent
 
+> **Archived on 2026-11-08.** Concurrency left the Phaenon language until PHP core has a
+> scheduler of its own: a `concurrently { }` block compiled to this package, amp and Revolt, three
+> production dependencies the compiler chose for its users, and the compiled output of Phaenon
+> now depends on nothing but PHP. The decision and its reasons are
+> [roadmap D25](https://github.com/phaenonlang/design/blob/main/roadmap.md) and
+> [concurrency.md §17](https://github.com/phaenonlang/design/blob/main/concurrency.md); the design
+> stays as the specification to map onto PHP's own primitives when a release has them. A program
+> that wants amp writes amp. The package is kept for the projects that pinned it; nothing is
+> published from here any more.
+
 Structured concurrency for code compiled from [Phaenon](https://phaenon.dev), a typed dialect
 of PHP that compiles to PHP. A `concurrently { … }` block and `spawn` in Phaenon source compile
 to calls on `\Phaenon\Concurrent\Scope`:
