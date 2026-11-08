@@ -2,6 +2,7 @@
     "name": "phaenon/concurrent",
     "description": "Structured concurrency for code compiled from Phaenon: the \\Phaenon\\Concurrent\\Scope class behind concurrently { … } blocks and spawn, on amp v3 and the Revolt event loop",
     "type": "library",
+    "abandoned": true,
     "license": "MIT",
     "keywords": [
         "phaenon",
